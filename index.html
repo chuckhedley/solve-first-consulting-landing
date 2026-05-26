@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Solve First Consulting | Practical AI & Automation Consulting for Small Businesses</title>
+  <meta name="description" content="Solve First Consulting helps small businesses identify workflow bottlenecks, reduce manual admin work, and implement practical AI and automation solutions that create clear business value." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="Solve First Consulting" />
+  <meta name="theme-color" content="#071f4d" />
+
+  <link rel="canonical" href="https://solvefirstconsulting.com/" />
+
+  <!-- Local relevance without making the page feel geographically limited. -->
+  <meta name="geo.region" content="US-GA" />
+  <meta name="geo.placename" content="Dawsonville, Georgia" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Solve First Consulting" />
+  <meta property="og:title" content="Practical AI & Automation Consulting for Small Businesses" />
+  <meta property="og:description" content="Find the workflow bottlenecks costing your business time, then apply AI and automation only where they create clear value." />
+  <meta property="og:url" content="https://solvefirstconsulting.com/" />
+  <meta property="og:image" content="https://solvefirstconsulting.com/images/sfc-logo.png" />
+  <meta property="og:image:alt" content="Solve First Consulting logo" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Solve First Consulting" />
+  <meta name="twitter:description" content="Practical AI and automation consulting for small businesses that need better workflows and less manual work." />
+  <meta name="twitter:image" content="https://solvefirstconsulting.com/images/sfc-logo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Solve First Consulting",
+    "url": "https://solvefirstconsulting.com/",
+    "logo": "https://solvefirstconsulting.com/images/sfc-logo.png",
+    "email": "john@solvefirstconsulting.com",
+    "founder": {
+      "@type": "Person",
+      "name": "John Hedley"
+    },
+    "areaServed": [
+      {
+        "@type": "State",
+        "name": "Georgia"
+      },
+      {
+        "@type": "Place",
+        "name": "North Georgia"
+      },
+      {
+        "@type": "Place",
+        "name": "Dawsonville, GA"
+      },
+      {
+        "@type": "Country",
+        "name": "United States"
+      }
+    ],
+    "description": "Solve First Consulting provides practical AI and workflow automation consulting for small businesses, helping identify operational bottlenecks, reduce manual admin work, and implement automation where it creates measurable value.",
+    "serviceType": [
+      "AI consulting",
+      "workflow automation consulting",
+      "business process automation",
+      "AI workflow opportunity audit",
+      "small business automation consulting"
+    ],
+    "knowsAbout": [
+      "AI automation",
+      "workflow optimization",
+      "business process improvement",
+      "operational bottlenecks",
+      "small business systems",
+      "administrative workflow automation"
+    ]
+  }
+  </script>
+
+  <!-- Replace favicon paths with your exported favicon files if desired. -->
+  <link rel="icon" href="favicon.png" />
+
+  <style>
+    :root {
+      --navy: #071f4d;
+      --navy-2: #0b2f6b;
+      --blue: #2d7ff9;
+      --blue-soft: #eaf3ff;
+      --blue-soft-2: #f5f9ff;
+      --ink: #172033;
+      --muted: #536174;
+      --line: #e6ebf2;
+      --panel: #ffffff;
+      --section: #f7fbff;
+      --shadow: 0 12px 30px rgba(7, 31, 77, 0.08);
+      --shadow-soft: 0 8px 22px rgba(7, 31, 77, 0.06);
+      --radius: 14px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 92px;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #fff;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img, svg { display: block; max-width: 100%; }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 700;
+      font-size: clamp(1.25rem, 1.7vw, 1.75rem);
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      flex: 0 0 auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(18px, 3vw, 34px);
+      color: var(--ink);
+      font-size: 0.94rem;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      opacity: 0.86;
+      transition: opacity 160ms ease, color 160ms ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--navy);
+      opacity: 1;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 44px;
+      padding: 0 22px;
+      border-radius: 3px;
+      border: 1px solid var(--navy);
+      font-weight: 750;
+      line-height: 1;
+      transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, color 160ms ease;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .button-primary {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    .button-primary:hover {
+      background: #0a285f;
+    }
+
+    .button-secondary {
+      background: #fff;
+      color: var(--navy);
+    }
+
+    .mobile-toggle {
+      display: none;
+    }
+
+    .mobile-menu-button {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .hamburger-line,
+    .hamburger-line::before,
+    .hamburger-line::after {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: var(--navy);
+      border-radius: 999px;
+      content: "";
+      position: relative;
+    }
+
+    .hamburger-line::before,
+    .hamburger-line::after {
+      position: absolute;
+      left: 0;
+    }
+
+    .hamburger-line::before { top: -7px; }
+    .hamburger-line::after { top: 7px; }
+
+    .mobile-panel {
+      display: none;
+    }
+
+    .hero {
+      padding: 24px 0 22px;
+      background:
+        radial-gradient(circle at 78% 28%, rgba(45,127,249,0.10), transparent 30%),
+        radial-gradient(circle at 100% 80%, rgba(7,31,77,0.04), transparent 30%),
+        #fff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(560px, 1fr) minmax(520px, 1fr);
+      gap: clamp(28px, 4vw, 52px);
+      align-items: center;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1, h2 {
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: -0.035em;
+      line-height: 1.08;
+    }
+
+    h1 {
+      max-width: none;
+      margin-bottom: 18px;
+      font-size: clamp(2rem, 2.35vw, 2.25rem);
+      font-weight: 700;
+    }
+
+    .hero-title-line {
+      white-space: nowrap;
+    }
+
+    .hero-copy {
+      max-width: 620px;
+      margin-bottom: 26px;
+      color: var(--muted);
+      font-size: clamp(0.98rem, 1.15vw, 1.08rem);
+      line-height: 1.5;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .hero-visual {
+      padding: 0;
+      min-width: 0;
+    }
+
+    .hero-visual img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: contain;
+    }
+
+    .workflow-visual {
+      width: 100%;
+      overflow: visible;
+    }
+
+    .section {
+      padding: clamp(52px, 7vw, 82px) 0;
+    }
+
+    .section-soft {
+      background: linear-gradient(180deg, #f7fbff 0%, #ffffff 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section.section-soft {
+      padding: 28px 0 24px;
+    }
+
+    .what-grid {
+      display: grid;
+      grid-template-columns: minmax(220px, 0.75fr) repeat(3, minmax(0, 1fr));
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .section-kicker {
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.75rem, 2.5vw, 2.35rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .section-kicker::after,
+    .accent-title::after {
+      content: "";
+      display: block;
+      width: 44px;
+      height: 2px;
+      margin-top: 12px;
+      background: var(--blue);
+      opacity: 0.9;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.45;
+      max-width: 260px;
+      margin-bottom: 0;
+    }
+
+    .feature-card {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 16px;
+      min-height: 156px;
+      padding: 24px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 6px;
+      color: var(--ink);
+      font-size: 0.96rem;
+      line-height: 1.25;
+    }
+
+    .feature-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.96rem;
+      line-height: 1.38;
+    }
+
+    .icon-bubble {
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--blue-soft);
+    }
+
+    .icon-bubble svg,
+    .mini-icon svg,
+    .contact-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    #offer {
+      padding: 30px 0;
+    }
+
+    #about {
+      padding: 0 0 30px;
+    }
+
+    .offer-fit {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      align-items: start;
+    }
+
+    .offer-fit > div:first-child {
+      padding-right: 36px;
+    }
+
+    .offer-fit > div:last-child {
+      padding-left: 36px;
+      border-left: 1px solid var(--line);
+    }
+
+    .accent-title {
+      margin-bottom: 10px;
+      color: var(--navy);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.38rem, 1.9vw, 1.75rem);
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 650px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    .audit-items {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .audit-item {
+      display: grid;
+      grid-template-columns: 40px 1fr;
+      gap: 12px;
+      padding-right: 14px;
+      border-right: 1px solid var(--line);
+    }
+
+    .audit-item:last-child {
+      border-right: 0;
+      padding-right: 0;
+    }
+
+    .mini-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--blue-soft);
+    }
+
+    .audit-item strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--ink);
+      font-size: 0.82rem;
+      line-height: 1.25;
+    }
+
+    .audit-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .check-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    .check-list li {
+      display: grid;
+      grid-template-columns: 22px 1fr;
+      gap: 10px;
+      align-items: start;
+      color: var(--ink);
+      font-size: 0.86rem;
+    }
+
+    .check {
+      width: 16px;
+      height: 16px;
+      margin-top: 3px;
+      border: 2px solid var(--navy-2);
+      color: var(--blue);
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.68rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .about-cta {
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0;
+      align-items: start;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 28px;
+      align-items: center;
+      padding-right: 36px;
+    }
+
+    .headshot {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 50% 35%, #d9e3ef 0 22%, transparent 23%),
+        radial-gradient(circle at 50% 92%, #c9d4e0 0 40%, transparent 41%),
+        #eef3f8;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .headshot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(1.06) contrast(0.96) saturate(0.92);
+    }
+
+    .about p,
+    .cta-panel p {
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+
+    .cta-panel {
+      padding-left: 36px;
+      border-left: 1px solid var(--line);
+    }
+
+    .contact-row {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 16px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .email-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--blue);
+      font-weight: 800;
+      font-size: 0.94rem;
+      white-space: nowrap;
+    }
+
+    .contact-row .button {
+      min-height: 38px;
+      padding: 0 18px;
+      white-space: nowrap;
+      font-size: 0.9rem;
+    }
+
+    .contact-icon {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer {
+      padding: 22px 0;
+      text-align: center;
+      color: #6f7b8c;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .icon-stroke {
+      stroke: var(--navy);
+      stroke-width: 2.25;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .icon-accent {
+      stroke: var(--blue);
+      stroke-width: 2.25;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+    }
+
+    .icon-fill-soft {
+      fill: #dcecff;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 1080px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy {
+        max-width: 700px;
+      }
+
+      .hero-visual {
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
+      .what-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-intro {
+        max-width: 700px;
+        margin-bottom: 8px;
+      }
+
+      .feature-card {
+        min-height: unset;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        width: min(100% - 36px, var(--max));
+      }
+
+      .nav {
+        min-height: 68px;
+      }
+
+      .nav-links,
+      .nav .button-primary {
+        display: none;
+      }
+
+      .mobile-menu-button {
+        display: inline-flex;
+      }
+
+      .mobile-panel {
+        display: none;
+        padding: 0 0 18px;
+        border-top: 1px solid var(--line);
+      }
+
+      .mobile-toggle:checked ~ .mobile-panel {
+        display: block;
+      }
+
+      .mobile-panel-inner {
+        width: min(var(--max), calc(100% - 36px));
+        margin: 0 auto;
+        display: grid;
+        gap: 12px;
+        padding-top: 18px;
+      }
+
+      .mobile-panel-inner a:not(.button) {
+        padding: 10px 0;
+        color: var(--ink);
+        font-weight: 700;
+      }
+
+      .offer-fit,
+      .about-cta {
+        grid-template-columns: 1fr;
+      }
+
+      .offer-fit > div:first-child,
+      .offer-fit > div:last-child,
+      .about {
+        padding-right: 0;
+        padding-left: 0;
+      }
+
+      .offer-fit > div:last-child {
+        border-left: 0;
+        margin-top: 28px;
+      }
+
+      .cta-panel {
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      .contact-row {
+        flex-wrap: wrap;
+      }
+
+      .audit-items {
+        grid-template-columns: 1fr;
+      }
+
+      .audit-item {
+        border-right: 0;
+        padding-right: 0;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .hero {
+        padding: 24px 0 28px;
+      }
+
+      h1 {
+        font-size: clamp(2.25rem, 12vw, 3.35rem);
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .hero-actions {
+        width: 100%;
+      }
+
+      .hero-visual {
+        display: none;
+      }
+
+      .feature-card {
+        grid-template-columns: 1fr;
+        padding: 24px;
+      }
+
+      .about {
+        grid-template-columns: 1fr;
+      }
+
+      .headshot {
+        width: 118px;
+        height: 118px;
+      }
+
+      .contact-row {
+        align-items: stretch;
+      }
+
+      .email-link {
+        font-size: 1rem;
+        word-break: break-word;
+      }
+    }
+  </style>
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Solve First Consulting home">
+        <img src="images/sfc-logo.png" style="height: 85px;" />
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#what-i-do">What I Do</a>
+        <a href="#offer">Offer</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="button button-primary" href="mailto:john@solvefirstconsulting.com?subject=Fit%20call%20request">Schedule a Fit Call</a>
+
+      <label class="mobile-menu-button" for="mobile-menu">
+        <span class="hamburger-line" aria-hidden="true"></span>
+        <span class="sr-only">Open menu</span>
+      </label>
+    </div>
+
+    <input class="mobile-toggle" id="mobile-menu" type="checkbox" />
+    <div class="mobile-panel">
+      <nav class="mobile-panel-inner" aria-label="Mobile navigation">
+        <a href="#what-i-do">What I Do</a>
+        <a href="#offer">Offer</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="button button-primary" href="mailto:john@solvefirstconsulting.com?subject=Fit%20call%20request">Schedule a Fit Call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div>
+          <h1 id="hero-title">
+            <span class="hero-title-line">Solve operational bottlenecks</span><br>
+            <span class="hero-title-line">before buying more software.</span>
+          </h1>
+          <p class="hero-copy">Practical AI and automation consulting for small businesses that need less manual work, better workflows, and smarter systems.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:john@solvefirstconsulting.com?subject=Fit%20call%20request">Schedule a Fit Call</a>
+            <a class="button button-secondary" href="mailto:john@solvefirstconsulting.com">Email John</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img src="images/automate.png" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="what-i-do">
+      <div class="container what-grid">
+        <div>
+          <h2 class="section-kicker">What I Do</h2>
+          <p class="section-intro">Solve First Consulting helps small and mid-sized businesses identify repetitive workflows, reduce manual admin work, and implement practical automation only where it creates clear business value.</p>
+        </div>
+
+        <article class="feature-card">
+          <div class="icon-bubble" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><circle cx="21" cy="21" r="12" class="icon-stroke"/><path d="M30 30l10 10" class="icon-stroke"/><path d="M15 16a10 10 0 0 1 10-4" class="icon-accent"/></svg>
+          </div>
+          <div>
+            <h3>Find the Real Problems</h3>
+            <p>I dig into how work really happens, uncover bottlenecks, and separate root causes from surface symptoms.</p>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon-bubble" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M24 6v6M24 36v6M8.4 15l5.2 3M34.4 30l5.2 3M8.4 33l5.2-3M34.4 18l5.2-3" class="icon-stroke"/><circle cx="24" cy="24" r="10" class="icon-stroke"/><circle cx="24" cy="24" r="4" fill="#dcecff" stroke="#2d7ff9" stroke-width="2"/></svg>
+          </div>
+          <div>
+            <h3>Design Practical Solutions</h3>
+            <p>I design simple, maintainable workflows and automation that fit your tools, team, and goals.</p>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="icon-bubble" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M8 39h32" class="icon-stroke"/><rect x="11" y="25" width="6" height="14" rx="2" class="icon-fill-soft" stroke="#071f4d" stroke-width="2"/><rect x="21" y="18" width="6" height="21" rx="2" fill="#bcdcff" stroke="#071f4d" stroke-width="2"/><rect x="31" y="10" width="6" height="29" rx="2" fill="#78b2ff" stroke="#071f4d" stroke-width="2"/></svg>
+          </div>
+          <div>
+            <h3>Build &amp; Improve</h3>
+            <p>I implement, document, and refine – so you get results now and a system that keeps getting better.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="offer">
+      <div class="container offer-fit">
+        <div>
+          <h2 class="accent-title">AI Workflow Opportunity Audit</h2>
+          <p class="lead">A focused diagnostic to identify the best automation opportunities, estimate value, and recommend a practical first implementation.</p>
+
+          <div class="audit-items">
+            <div class="audit-item">
+              <div class="mini-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="18" y="6" width="12" height="8" rx="2" class="icon-stroke"/><path d="M24 14v8M24 22h-12v8M24 22h12v8" class="icon-stroke"/><rect x="7" y="30" width="10" height="10" rx="2" class="icon-fill-soft" stroke="#071f4d" stroke-width="2"/><rect x="19" y="30" width="10" height="10" rx="2" class="icon-fill-soft" stroke="#071f4d" stroke-width="2"/><rect x="31" y="30" width="10" height="10" rx="2" class="icon-fill-soft" stroke="#071f4d" stroke-width="2"/></svg>
+              </div>
+              <div>
+                <strong>Map workflow friction</strong>
+                <p>See where time, errors, and delays are happening.</p>
+              </div>
+            </div>
+
+            <div class="audit-item">
+              <div class="mini-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16" class="icon-stroke"/><circle cx="24" cy="24" r="9" class="icon-accent"/><circle cx="24" cy="24" r="3" fill="#2d7ff9"/><path d="M34 14l6-6M36 8h4v4" class="icon-stroke"/></svg>
+              </div>
+              <div>
+                <strong>Identify high-value opportunities</strong>
+                <p>Focus on the changes that deliver the biggest impact.</p>
+              </div>
+            </div>
+
+            <div class="audit-item">
+              <div class="mini-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M17 31c-3-3-5-7-5-12a12 12 0 0 1 24 0c0 5-2 9-5 12" class="icon-stroke"/><path d="M19 34h10M20 39h8" class="icon-stroke"/><path d="M20 23c3-4 5-4 8 0" class="icon-accent"/><path d="M24 23v8" class="icon-accent"/></svg>
+              </div>
+              <div>
+                <strong>Recommend the best first build</strong>
+                <p>Clear scope, expected value, and next steps.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="accent-title">You may be a good fit if...</h2>
+          <ul class="check-list">
+            <li><span class="check">✓</span><span>You have repeated admin tasks that slow your team down</span></li>
+            <li><span class="check">✓</span><span>You rely on manual follow-up and status chasing</span></li>
+            <li><span class="check">✓</span><span>Your tools and data are disconnected or don’t talk</span></li>
+            <li><span class="check">✓</span><span>Forms, documents, and reports are messy or duplicated</span></li>
+            <li><span class="check">✓</span><span>Customer or patient communication is slow or inconsistent</span></li>
+            <li><span class="check">✓</span><span>You’re curious about AI and automation, but not the hype</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-cta">
+        <div class="about">
+          <div class="headshot" aria-hidden="true">
+            <img src="images/headshot.jpeg" alt="John Hedley" />
+          </div>
+          <div>
+            <h2 class="accent-title">Work with an experienced builder</h2>
+            <p>I’m John Hedley, a senior software developer and consultant with decades of experience turning messy business processes into practical systems.</p>
+            <p>I’ve built and modernized tools for businesses across healthcare, professional services, fintech, operations and more – always with a focus on simplicity, reliability, and measurable results.</p>
+          </div>
+        </div>
+
+        <div class="cta-panel" id="contact">
+          <h2 class="accent-title">Want to find out where automation could actually help?</h2>
+          <p>Let’s have a short, no-pressure conversation about your business and see if there’s a fit.</p>
+          <div class="contact-row">
+            <a class="email-link" href="mailto:john@solvefirstconsulting.com">
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="7" y="12" width="34" height="24" rx="3" class="icon-stroke"/><path d="M8 15l16 13 16-13" class="icon-stroke"/></svg>
+              </span>
+              john@solvefirstconsulting.com
+            </a>
+            <a class="button button-primary" href="mailto:john@solvefirstconsulting.com?subject=Fit%20call%20request">Start the conversation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Solve First Consulting. All rights reserved.</div>
+  </footer>
+</body>
+</html>
